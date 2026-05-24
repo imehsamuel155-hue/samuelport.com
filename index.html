@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SamuelPortfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+
+<div class="hero-grid"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+  <span id="themeIcon">☀️</span> <span id="themeLabel">Light</span>
+</button>
+
+<!-- Side Nav Trigger -->
+<div class="side-nav-trigger" onclick="openNav()" aria-label="Open navigation" role="button">
+  <span></span>
+</div>
+
+<!-- Side Nav -->
+<nav class="side-nav" id="sideNav" aria-label="Site navigation">
+  <button class="side-nav-close" onclick="closeNav()" aria-label="Close navigation">✕</button>
+  <p class="nav-label">Navigation</p>
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#projects" onclick="closeNav()">Projects</a>
+  <a href="#skills" onclick="closeNav()">Skills</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+</nav>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<!-- Back to Top -->
+<button class="back-top" id="backTop" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<div class="hero" id="home">
+  <div class="hero-inner" style="position:relative; z-index:1;">
+    <p class="hero-tag"> Full Stack Website Developer</p>
+
+    <span class="hero-line">
+      <span class="word w1">Hi. I'm  Samuel,</span>&nbsp;
+      <span class="word w2">I Build  and</span>&nbsp;
+      <span class="word accent-word w3">Construct</span>
+    </span>
+    <span class="hero-line">
+      <span class="word w4">Website</span>&nbsp;
+    </span>
+
+    <p class="hero-sub">Front-end. Back-end power. Full-stack Website Developer.</p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch With Me </a>
+    </div>
+  </div>
+</div>
+
+<div class="divider"><hr></div>
+
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section id="about">
+  <div class="about-flex">
+
+    <div class="reveal-left">
+      <p class="section-label">My Front-End Skill</p>
+      <div class="role-badge front">
+        <span class="dot"></span> Front-End Developer
+      </div>
+      <div class="about-text">
+        <h2>Focused on performance<br>Accessibility <span style="color:var(--accent)">And User Experience</span></h2>
+        <p style="margin-top:1rem;">I'm a Front-End Developer passionate about building responsive, user friendly, and visually appealing web applications.</p>
+      </div>
+    </div>
+
+    <div class="reveal-right" style="align-self: flex-end; max-width: 560px; width: 100%;">
+      <div class="role-badge back">
+        <span class="dot"></span> Back-End Developer
+      </div>
+      <div class="about-text">
+        <h2>Creating secure,<br>efficient, and maintainable <span style="color:var(--accent2)">Back-End solutions.</span></h2>
+        <p style="margin-top:1rem;">Passionate Back-End Developer dedicated to building efficient, secure, and maintainable server-side solutions.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ══════════════════ PROJECTS ══════════════════ -->
+<section id="projects">
+  <div class="reveal-up">
+    <p class="section-label">What I've Built</p>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">A few things I've Built recently.</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card reveal-up" style="transition-delay:0.1s;">
+      <img class="project-img" src="img/IMG_7350.png" alt="nexarhq">
+      <div class="project-overlay">
+        <a href="https://www.app.nexarhq.com" class="visit-btn">Visit Site ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal-up" style="transition-delay:0.2s;">
+      <img class="project-img" src="img/IMG_7349.png" alt="https://jagabansmsandlogs">
+      <div class="project-overlay">
+        <a href="https://jagabansmsandlogs.com.ng" class="visit-btn">Visit Site ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal-up" style="transition-delay:0.3s;">
+      <img class="project-img" src="img/IMG_7353.png" alt="jemi">
+      <div class="project-overlay">
+        <a href="https://www.jemilmarketplace.com" class="visit-btn">Visit Site ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal-up" style="transition-delay:0.4s;">
+      <img class="project-img" src="img/IMG_7353.png" alt="x">
+      <div class="project-overlay">
+        <a href="https://xclusiveplugs.com" class="visit-btn">Visit Site ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ══════════════════ SKILLS ══════════════════ -->
+<section id="skills">
+  <div class="reveal-up">
+    <p class="section-label">My Toolkit</p>
+    <h2 class="section-title">Skills & Technologies</h2>
+    <p class="section-sub">My Tools</p>
+  </div>
+
+  <div class="reveal-left" style="margin-bottom:2rem;">
+    <p style="font-family:'DM Mono',monospace; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:0.75rem;">Front End</p>
+    <div class="skills-row">
+      <span class="skill-chip">React</span>
+      <span class="skill-chip">Next.js</span>
+      <span class="skill-chip">TypeScript</span>
+      <span class="skill-chip">Tailwind CSS</span>
+      <span class="skill-chip">Framer Motion</span>
+      <span class="skill-chip">Three.js</span>
+      <span class="skill-chip">Figma</span>
+      <span class="skill-chip">CSS Animation</span>
+    </div>
+  </div>
+
+  <div class="reveal-right">
+    <p style="font-family:'DM Mono',monospace; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent2); margin-bottom:0.75rem;">Back End</p>
+    <div class="skills-row">
+      <span class="skill-chip">Node.js</span>
+      <span class="skill-chip">Express</span>
+      <span class="skill-chip">PostgreSQL</span>
+      <span class="skill-chip">MongoDB</span>
+      <span class="skill-chip">Redis</span>
+      <span class="skill-chip">GraphQL</span>
+      <span class="skill-chip">Docker</span>
+      <span class="skill-chip">AWS</span>
+      <span class="skill-chip">CI/CD</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact">
+  <div class="reveal-up">
+    <p class="section-label">Let's Talk</p>
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Contract, and full-time opportunities.</p>
+  </div>
+
+  <div class="contact-card reveal-up">
+
+    <div class="contact-info">
+      <p>Have a project in mind or want to collaborate? Drop me a message and I'll get back to you within 24 hours.</p>
+
+      <div class="contact-item">
+        <div class="icon">E</div>
+        <div>
+          <p style="font-size:0.5rem; color:var(--text2); font-family:'DM Mono',monospace; letter-spacing:0.1em; margin-bottom:0.1rem;">EMAIL</p>
+          <a href="mailto:hello@yourname.dev">Imehsamuel155@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon">L</div>
+        <div>
+          <p style="font-size:0.7rem; color:var(--text2); font-family:'DM Mono',monospace; letter-spacing:0.1em; margin-bottom:0.1rem;">LOCATION</p>
+          <span>Agbor, Delta State. Nigeria </span>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Contact Form</label>
+        <input type="text" id="name" placeholder="John for example" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="John@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Tell me how you want your Next project..." required></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submitBtn">Send Message ↗</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Samuel<span>.</span>Imeh</div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>© 2026 Samuelimeh  · Portfolio</p>
+  </div>
+</footer>
